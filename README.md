@@ -36,106 +36,85 @@ The level is structured vertically, guiding the player through a sequence of int
 
 3. **Outdoor Walkway (View Section)**  
    - HDRI skybox integration  
-   - Provides spatial depth and realism  
+   - Provides spatial depth and realism
+     ![Outdoor Walkway](./screenshots/walkway_HDRI_view.png)  
+     
+     
 
 4. **Platform Level**  
    - Railings, barriers, trash bins  
    - Subtle lighting cues guiding the player  
-   - Enemy encounter triggers  
+   - Enemy encounter triggers
+     ![Platform Level](./screenshots/platform_area_1.png)
+     ![Platform Level](./screenshots/platform_area_2.png)
+     
 
 5. **Tunnel & Derailed Train Section**  
    - Tight corridors + darker atmosphere  
    - Derailed carriage set piece  
    - Final enemy spawn sequence  
-   - Ends at extraction trigger  
+   - Ends at extraction trigger
+     ![Tunnel](./screenshots/tunnel_train_crash_1.png)
+     ![Tunnel](./screenshots/tunnel_train_crash_2.png)
+     
+     
 
----
 
-# 🎮 Gameplay Features
+# Gameplay Features
 
-### 🔹 **Blueprint-Driven Interaction System**
+### **Blueprint-Driven Interaction System**
 - Text prompt widget appears when player approaches interactables  
 - Blueprint Widgets used:  
-  - `BP_txt_hudong`（交互提示）  
-  - `BPW_txt_tishi`（屏幕提示）  
+  - `BP_txt_hudong`（Interactive prompts）  
+  - `BPW_txt_tishi`（Screen prompt text）  
 
-### 🔹 **Automatic Escalator System**  
+### **Automatic Escalator System**  
 - Trigger → escalator starts moving  
 - Uses `BP_autoEsca`  
 - Smooth interpolation + player-safe movement  
 
-### 🔹 **Door & Path Progression System**  
+### **Door & Path Progression System**  
 - Player approaches → prompt appears  
 - Press key → door opens  
 - Correct sequencing ensures the level is “smoothly playable” end-to-end  
 
-### 🔹 **Enemy Spawn Triggers**  
+### **Enemy Spawn Triggers**  
 - Enemies activate only when entering specific zones  
 - Prevents pre-loading and avoids performance drops  
 
-### 🔹 **Weapon & Item Pickup System**  
+### **Weapon & Item Pickup System**  
 - Optional pickups across different floors  
 - Balanced to guide skill progression  
 
----
 
-# 🛠️ Blueprints (Screenshots)
-
-> *(Replace these with the images you have uploaded)*
+# Blueprints (Screenshots)
 
 - Door interaction logic  
-  ![Door BP](./blueprints/bp_door.png)
+  ![Door BP](./blueprints/bp_door_entre.png)
+  ![Door BP](./blueprints/bp_door_exit.png)
+  
 
 - Escalator movement system  
-  ![Escalator BP](./blueprints/bp_escalator.png)
-
-- Enemy spawn & activation  
-  ![Enemy BP](./blueprints/bp_enemy.png)
+  ![Escalator BP](./blueprints/bp_autoescalator.png)
 
 - Hint text UI blueprint  
-  ![Hint UI](./blueprints/bp_hint_ui.png)
+  ![Hint UI](./blueprints/bp_tishitext.png)
 
----
 
-# 🖼️ Environment Screenshots
 
-> *(Replace these with your final screenshots for best visual impression)*
-
-- Waiting Hall  
-  ![Waiting Hall](./screenshots/waiting_hall.png)
-
-- Concourse Level  
-  ![Concourse](./screenshots/concourse.png)
-
-- Outdoor Walkway  
-  ![Walkway](./screenshots/walkway.png)
-
-- Platform Section  
-  ![Platform](./screenshots/platform.png)
-
-- Tunnel + Derailed Train  
-  ![Tunnel](./screenshots/tunnel.png)
-
----
-
-# 🎥 Full Playthrough (Video)
-
-> *(Put your MP4 / YouTube / OneDrive video link here)*
-
-👉 **Full Gameplay Walkthrough:**  
+# Full Playthrough (Video)
 `[Insert your playthrough link here]`
 
 This recording demonstrates:
-
 - Full level flow  
 - Blueprint interactions  
 - Combat + pickups  
 - Lighting & atmosphere  
 - Final extraction sequence  
 
----
 
-# ✔️ Technical Highlights
+
+# Technical Highlights
 
 ### **Environment & Lighting**
 - Modular meshes assembled for multi-floor layout  
@@ -152,14 +131,35 @@ This recording demonstrates:
 
 ### **Performance & Polish**
 - Removed unused assets  
-- Optimized collision on large meshes  
+- Optimised collision on large meshes  
 - Verified all trigger volumes  
 - Cleaned environment clutter and alignment  
 - Tested full run end-to-end on Windows build  
 
+
+
 ---
 
-# 🧩 Project Structure (GitHub Repository)
+# Download (Project & Playable Build)
+
+### **Packaged Game (Windows EXE)**  
+**Download:**  
+`[Your OneDrive ZIP link]`  
+
+
+### **Full UE5 Project Source (.uproject + Content)**  
+**Download:**  
+`[Your OneDrive full project link]`  
+Includes:
+
+- All assets  
+- Blueprints  
+- Maps  
+- Config  
+- PlayerStart and triggers  
+- Escalator BP  
+- UI BP  
+
 
 This repository does **not** contain the full UE5 project (too large).  
 Instead, it contains all **documentation, screenshots, blueprints, and download links**.
