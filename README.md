@@ -27,7 +27,12 @@ The level is structured vertically, guiding the player through a sequence of int
 2. **Concourse Level**  
    - Benches, debris, broken boards, props  
    - HDRI outdoor walkway visible from this floor  
-   - First set of optional weapons / items  
+   - First set of optional weapons / items
+     ![Concourse Level](./screenshots/concourse_area_1.png)
+     ![Concourse Level](./screenshots/concourse_area_2.png)
+     ![Concourse Level](./screenshots/concourse_area_3.png)
+     
+     
 
 3. **Outdoor Walkway (View Section)**  
    - HDRI skybox integration  
