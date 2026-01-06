@@ -5,7 +5,7 @@ This is an **end-to-end Unreal Engine project**, covering level design, Blueprin
 
 ---
 
-## Project Highlights
+## 1. Project Highlights
 
 - Unreal Engine **5.6.1** vertical level design (multi-floor underground station)
 - **Solo project**: design → implementation → polish
@@ -15,7 +15,7 @@ This is an **end-to-end Unreal Engine project**, covering level design, Blueprin
 - Focus on **environment storytelling, player flow, and performance safety**
 
 
-## Technical Highlights
+## 2. Technical Highlights
 
 ### Environment & Lighting
 - Modular meshes assembled into a multi-floor layout  
@@ -39,7 +39,7 @@ This is an **end-to-end Unreal Engine project**, covering level design, Blueprin
 
 
 
-## Design Intent
+## 3. Design Intent
 
 This project was created to:
 
@@ -53,7 +53,7 @@ This project was created to:
 
 ---
 
-## Level Overview
+## 4. Level Overview
 
 The level is structured vertically, guiding the player through a sequence of interconnected spaces with clear visual cues and progressive gameplay beats.
 
@@ -112,7 +112,7 @@ Final sequence with tighter spaces and darker atmosphere.
 
 ---
 
-## Gameplay Features
+## 5. Gameplay Features
 
 ### Blueprint-Driven Interaction System
 - Context-based text prompts appear near interactable objects  
@@ -122,7 +122,7 @@ Final sequence with tighter spaces and darker atmosphere.
 - `BP_txt_hudong` – Interaction prompts  
 - `BPW_txt_tishi` – On-screen hint text  
 
----
+
 
 ### Automatic Escalator System
 - Trigger-based activation when player approaches  
@@ -131,29 +131,30 @@ Final sequence with tighter spaces and darker atmosphere.
 
 **Blueprint:** `BP_autoEsca`
 
----
+
 
 ### Door & Path Progression System
 - Interaction prompt appears when player approaches  
 - Input-gated door opening  
 - Ensures correct level progression and smooth flow
 
----
+
 
 ### Enemy Spawn Triggers
 - Volume-based activation  
 - Enemies remain dormant until player enters combat zones  
 - Prevents unnecessary AI ticking and improves performance
 
----
+
 
 ### Weapon & Item Pickup System
 - Optional pickups placed across multiple floors  
 - Designed to support gradual skill and combat progression
 
+
 ---
 
-## Blueprint Examples
+## 6. Blueprint Examples
 
 ### Door Interaction Logic
 State-based door interaction with input validation and progression control.
@@ -161,14 +162,14 @@ State-based door interaction with input validation and progression control.
 ![Door Blueprint](./blueprints/bp_door_entre.png)
 ![Door Blueprint](./blueprints/bp_door_exit.png)
 
----
+
 
 ### Escalator Movement System
 Timeline-driven escalator movement with collision safety.
 
 ![Escalator Blueprint](./blueprints/bp_autoescalator.png)
 
----
+
 
 ### Hint Text UI System
 Reusable widget-based UI prompt system.
@@ -183,7 +184,13 @@ Reusable widget-based UI prompt system.
 
 
 
-## Full Playthrough Video
+
+
+
+## 7. Download
+
+
+### Full Playthrough Video
 
 A full recorded playthrough demonstrating:
 
@@ -195,10 +202,6 @@ A full recorded playthrough demonstrating:
 
 **Video:** `[Insert playthrough link here]`
 
-
-
-
-## Download
 
 ### Packaged Game (Windows)
 - Platform: Windows  
