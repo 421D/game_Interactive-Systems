@@ -8,7 +8,6 @@ This is an **end-to-end Unreal Engine project**, covering level design, Blueprin
 ## 1. Project Highlights
 
 - Unreal Engine **5.6.1** vertical level design (multi-floor underground station)
-- **Solo project**: design → implementation → polish
 - Blueprint-driven **interaction, UI prompts, enemy triggers**
 - Guided navigation from **PlayerStart → final extraction**
 - Fully packaged **Windows build** (complete playthrough)
@@ -42,7 +41,6 @@ This is an **end-to-end Unreal Engine project**, covering level design, Blueprin
 ## 3. Design Intent
 
 This project was created to:
-
 - Practice **vertical level navigation** in Unreal Engine  
 - Guide players using **lighting, props, and spatial cues** rather than explicit UI arrows  
 - Build **modular Blueprint systems** reusable across environments  
@@ -200,7 +198,7 @@ A full recorded playthrough demonstrating:
 - Lighting and atmosphere  
 - Final extraction sequence  
 
-**Video:** `[Insert playthrough link here]`
+**Video:** `[[video link](https://drive.google.com/file/d/1mUTDzbTSbovZPY6yt5wxLsGlH_FHeAZO/view?usp=sharing)]`
 
 
 ### Packaged Game (Windows)
@@ -208,7 +206,7 @@ A full recorded playthrough demonstrating:
 - Unreal Engine version: 5.6.1  
 
 **Download:**  
-`[[Windows build ZIP lin](https://drive.google.com/drive/folders/1NYgutUPhsYXTx3ksWA8IZWykiwtm7k73?usp=sharing)]`
+`[[Windows build ZIP link](https://drive.google.com/drive/folders/1NYgutUPhsYXTx3ksWA8IZWykiwtm7k73?usp=sharing)]`
 
 
 ### Full UE5 Project Source
@@ -220,11 +218,11 @@ Includes:
 **Download:**  
 `[[full project link](https://drive.google.com/drive/folders/1J7oBBeE6-gXomQ9xo9Kn_41dar-nEcRf?usp=drive_link)]`
 
-> Note: Due to size limits, this GitHub repository contains **documentation, screenshots, and Blueprint examples only**.  
-> The full UE5 project and packaged build are provided via external download links.
 
 ---
 
-## License
+> Note: Due to size limits, this GitHub repository contains **documentation, screenshots, and Blueprint examples only**.  
+> The full UE5 project and packaged build are provided via external download links.
 
-This project is provided for **portfolio and educational purposes**.
+
+
