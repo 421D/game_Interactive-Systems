@@ -1,168 +1,227 @@
-# UE5 Underground Multi-Floor Station Level  
+# UE5 Underground Multi-Floor Station Level
 
-This project is a complete **abandoned underground station level** built in **Unreal Engine 5.6.1**.  
-It was designed, implemented, and polished end-to-end, including:
-
-- Multi-floor environment construction  
-- Blueprint systems for interaction, combat, and player guidance  
-- Navigation flow from PlayerStart → final extraction point  
-- Lighting, atmosphere, props, collision, and performance polish  
-- A packaged Windows build for full playthrough
-- A fully playable, polished Unreal Engine 5 environment featuring exploration, light combat, dynamic interactions, and blueprint-driven gameplay logic.
+A **fully playable abandoned underground station level** built in **Unreal Engine 5.6.1**.  
+This is an **end-to-end Unreal Engine project**, covering level design, Blueprint gameplay systems, lighting, and performance polish.
 
 ---
 
-# Level Overview
+## Project Highlights
 
-The level is structured vertically, guiding the player through a sequence of interconnected spaces:
-
-1. **Upper Waiting Hall**  
-   - Initial spawn point  
-   - Seating, signage, environmental storytelling  
-   - Introductory lighting and mood
-     ![Upper Waiting Hal](./screenshots/station_waiting_hall_1.png)
-     ![Upper Waiting Hal](./screenshots/station_waiting_hall_2.png)
-     ![Upper Waiting Hal](./screenshots/station_waiting_hall_3.png)
-     
-2. **Concourse Level**  
-   - Benches, debris, broken boards, props  
-   - HDRI outdoor walkway visible from this floor  
-   - First set of optional weapons / items
-     ![Concourse Level](./screenshots/concourse_area_1.png)
-     ![Concourse Level](./screenshots/concourse_area_2.png)
-     ![Concourse Level](./screenshots/concourse_area_3.png)
-     
-     
-
-3. **Outdoor Walkway (View Section)**  
-   - HDRI skybox integration  
-   - Provides spatial depth and realism
-     ![Outdoor Walkway](./screenshots/walkway_HDRI_view.png)  
-     
-     
-
-4. **Platform Level**  
-   - Railings, barriers, trash bins  
-   - Subtle lighting cues guiding the player  
-   - Enemy encounter triggers
-     ![Platform Level](./screenshots/platform_area_1.png)
-     ![Platform Level](./screenshots/platform_area_2.png)
-     
-
-5. **Tunnel & Derailed Train Section**  
-   - Tight corridors + darker atmosphere  
-   - Derailed carriage set piece  
-   - Final enemy spawn sequence  
-   - Ends at extraction trigger
-     ![Tunnel](./screenshots/tunnel_train_crash_1.png)
-     ![Tunnel](./screenshots/tunnel_train_crash_2.png)
-     
-     
+- Unreal Engine **5.6.1** vertical level design (multi-floor underground station)
+- **Solo project**: design → implementation → polish
+- Blueprint-driven **interaction, UI prompts, enemy triggers**
+- Guided navigation from **PlayerStart → final extraction**
+- Fully packaged **Windows build** (complete playthrough)
+- Focus on **environment storytelling, player flow, and performance safety**
 
 
-# Gameplay Features
+## Technical Highlights
 
-### **Blueprint-Driven Interaction System**
-- Text prompt widget appears when player approaches interactables  
-- Blueprint Widgets used:  
-  - `BP_txt_hudong`（Interactive prompts）  
-  - `BPW_txt_tishi`（Screen prompt text）  
-
-### **Automatic Escalator System**  
-- Trigger → escalator starts moving  
-- Uses `BP_autoEsca`  
-- Smooth interpolation + player-safe movement  
-
-### **Door & Path Progression System**  
-- Player approaches → prompt appears  
-- Press key → door opens  
-- Correct sequencing ensures the level is “smoothly playable” end-to-end  
-
-### **Enemy Spawn Triggers**  
-- Enemies activate only when entering specific zones  
-- Prevents pre-loading and avoids performance drops  
-
-### **Weapon & Item Pickup System**  
-- Optional pickups across different floors  
-- Balanced to guide skill progression  
-
-
-# Blueprints (Screenshots)
-
-- Door interaction logic  
-  ![Door BP](./blueprints/bp_door_entre.png)
-  ![Door BP](./blueprints/bp_door_exit.png)
-  
-
-- Escalator movement system  
-  ![Escalator BP](./blueprints/bp_autoescalator.png)
-
-- Hint text UI blueprint  
-  ![Hint UI](./blueprints/bp_tishitext.png)
-
-
-
-# Full Playthrough (Video)
-`[Insert your playthrough link here]`
-
-This recording demonstrates:
-- Full level flow  
-- Blueprint interactions  
-- Combat + pickups  
-- Lighting & atmosphere  
-- Final extraction sequence  
-
-
-
-# Technical Highlights
-
-### **Environment & Lighting**
-- Modular meshes assembled for multi-floor layout  
+### Environment & Lighting
+- Modular meshes assembled into a multi-floor layout  
 - HDRI outdoor lighting integration  
-- Volumetric fog + post-processing for mood  
-- Polished props layout & collision fixes  
+- Volumetric fog and post-processing for atmosphere  
+- Polished prop placement and collision alignment  
 
-### **Blueprint Engineering**
+### Blueprint Engineering
 - Modular interaction system  
-- Trigger-driven spawn events  
-- Automated movement (escalator)  
-- UI/UX feedback (prompts / hint widgets)  
-- Safe flow validation & player guidance  
+- Trigger-driven enemy spawns  
+- Automated escalator movement  
+- UI feedback via reusable widgets  
+- Validated level flow from start to extraction  
 
-### **Performance & Polish**
+### Performance & Polish
 - Removed unused assets  
 - Optimised collision on large meshes  
 - Verified all trigger volumes  
 - Cleaned environment clutter and alignment  
-- Tested full run end-to-end on Windows build  
+- Tested full playthrough on packaged Windows build
+
+
+
+## Design Intent
+
+This project was created to:
+
+- Practice **vertical level navigation** in Unreal Engine  
+- Guide players using **lighting, props, and spatial cues** rather than explicit UI arrows  
+- Build **modular Blueprint systems** reusable across environments  
+- Maintain stable performance while using dynamic interactions and AI triggers  
+
 
 
 
 ---
 
-# Download (Project & Playable Build)
+## Level Overview
 
-### **Packaged Game (Windows EXE)**  
+The level is structured vertically, guiding the player through a sequence of interconnected spaces with clear visual cues and progressive gameplay beats.
+
+### Upper Waiting Hall
+Initial spawn area introducing mood, scale, and environmental storytelling.
+
+![Upper Waiting Hall](./screenshots/station_waiting_hall_1.png)
+![Upper Waiting Hall](./screenshots/station_waiting_hall_2.png)
+
+---
+
+### Concourse Level
+Mid-level transition space with debris, props, and optional item pickups.
+
+- Benches, broken boards, scattered debris  
+- Outdoor HDRI walkway visible from this floor  
+- First optional weapons / items
+
+![Concourse Level](./screenshots/concourse_area_1.png)
+![Concourse Level](./screenshots/concourse_area_2.png)
+
+---
+
+### Outdoor Walkway (View Section)
+A visual break from enclosed spaces, adding spatial depth and realism.
+
+- HDRI skybox integration  
+- Environmental contrast before re-entering underground areas
+
+![Outdoor Walkway](./screenshots/walkway_HDRI_view.png)
+
+---
+
+### Platform Level
+Combat-oriented space with subtle lighting and layout cues guiding player movement.
+
+- Railings, barriers, platform props  
+- Enemy encounter triggers  
+- Navigation guided through lighting and structure
+
+![Platform Level](./screenshots/platform_area_1.png)
+![Platform Level](./screenshots/platform_area_2.png)
+
+---
+
+### Tunnel & Derailed Train Section
+Final sequence with tighter spaces and darker atmosphere.
+
+- Narrow corridors and reduced visibility  
+- Derailed train set piece  
+- Final enemy spawn sequence  
+- Ends at extraction trigger
+
+![Tunnel Section](./screenshots/tunnel_train_crash_1.png)
+![Tunnel Section](./screenshots/tunnel_train_crash_2.png)
+
+---
+
+## Gameplay Features
+
+### Blueprint-Driven Interaction System
+- Context-based text prompts appear near interactable objects  
+- Reusable UI widget system
+
+**Blueprint Widgets:**
+- `BP_txt_hudong` – Interaction prompts  
+- `BPW_txt_tishi` – On-screen hint text  
+
+---
+
+### Automatic Escalator System
+- Trigger-based activation when player approaches  
+- Smooth, timeline-driven movement  
+- Player-safe collision handling
+
+**Blueprint:** `BP_autoEsca`
+
+---
+
+### Door & Path Progression System
+- Interaction prompt appears when player approaches  
+- Input-gated door opening  
+- Ensures correct level progression and smooth flow
+
+---
+
+### Enemy Spawn Triggers
+- Volume-based activation  
+- Enemies remain dormant until player enters combat zones  
+- Prevents unnecessary AI ticking and improves performance
+
+---
+
+### Weapon & Item Pickup System
+- Optional pickups placed across multiple floors  
+- Designed to support gradual skill and combat progression
+
+---
+
+## Blueprint Examples
+
+### Door Interaction Logic
+State-based door interaction with input validation and progression control.
+
+![Door Blueprint](./blueprints/bp_door_entre.png)
+![Door Blueprint](./blueprints/bp_door_exit.png)
+
+---
+
+### Escalator Movement System
+Timeline-driven escalator movement with collision safety.
+
+![Escalator Blueprint](./blueprints/bp_autoescalator.png)
+
+---
+
+### Hint Text UI System
+Reusable widget-based UI prompt system.
+
+![Hint UI Blueprint](./blueprints/bp_tishitext.png)
+
+---
+
+
+
+
+
+
+
+## Full Playthrough Video
+
+A full recorded playthrough demonstrating:
+
+- Complete level flow  
+- Blueprint interactions  
+- Combat and item pickups  
+- Lighting and atmosphere  
+- Final extraction sequence  
+
+**Video:** `[Insert playthrough link here]`
+
+
+
+
+## Download
+
+### Packaged Game (Windows)
+- Platform: Windows  
+- Unreal Engine version: 5.6.1  
+
 **Download:**  
-`[Your OneDrive ZIP link]`  
+`[[Windows build ZIP lin](https://drive.google.com/drive/folders/1NYgutUPhsYXTx3ksWA8IZWykiwtm7k73?usp=sharing)]`
 
 
-### **Full UE5 Project Source (.uproject + Content)**  
-**Download:**  
-`[Your OneDrive full project link]`  
+### Full UE5 Project Source
 Includes:
+- Full Unreal Engine project  
+- Maps, assets, Blueprints, UI systems  
+- PlayerStart, triggers, escalator BP  
 
-- All assets  
-- Blueprints  
-- Maps  
-- Config  
-- PlayerStart and triggers  
-- Escalator BP  
-- UI BP  
+**Download:**  
+`[[full project link](https://drive.google.com/drive/folders/1J7oBBeE6-gXomQ9xo9Kn_41dar-nEcRf?usp=drive_link)]`
 
+> Note: Due to size limits, this GitHub repository contains **documentation, screenshots, and Blueprint examples only**.  
+> The full UE5 project and packaged build are provided via external download links.
 
-This repository does **not** contain the full UE5 project (too large).  
-Instead, it contains all **documentation, screenshots, blueprints, and download links**.
+---
 
-Recommended structure:
+## License
 
+This project is provided for **portfolio and educational purposes**.
